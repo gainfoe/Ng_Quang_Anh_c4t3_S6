@@ -92,7 +92,7 @@ def main():
                     snake.change_dir("Down")
 
         snake.move(food.food_pos())
-        window.fill((0, 0, 0))
+        window.fill(black)
         the_text = my_font.render("This's just a demo, so basically you can't lose. Score: " + str(snake.score), True, red)
         window.blit(the_text, (10, 10))
         for ball in snake.Body():
